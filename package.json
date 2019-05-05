@@ -1,0 +1,16 @@
+{
+  "name": "rush",
+  "version": "1.0.0",
+  "description": "Scss/Simple Grid Framework. ClassベースまたはMixinベースでのシンプルなCSSフレームワークです。",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "css": "node-sass --include-path scss ./lib/scss/style.scss ./lib/css/style.min.css --output-style compressed -w"
+  },
+  "author": "wadaryohei",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

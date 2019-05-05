@@ -1,0 +1,34 @@
+// clearfix
+@mixin clearfix {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+// position center
+@mixin position-center($top: 50%, $left: 50%, $translateX: -50%, $translateY: -50%) {
+    left: $left;
+    position: absolute;
+    top: $top;
+    transform: translate($translateX, $translateY);
+    width: 100%;
+}
+
+// mediaquery
+@mixin max($width) {
+    @media only screen and (max-width: $width + px) {
+        @content;
+    }
+}
+
+@mixin and($minWidth,$maxWidth) {
+    @media only screen and (min-width: $minWidth + px) and (max-width: $maxWidth + px) {
+        @content;
+    }
+}
+
+@mixin min($width) {
+    @media only screen and (min-width: $width + px) {
+        @content;
+    }
+}
